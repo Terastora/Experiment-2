@@ -1,0 +1,49 @@
+/* 
+PROBLEM 9: 
+Create a program that will draw a box using “*” characters given its dimensions in rows and columns. 
+See the sample outputs below:
+How many rows: 6
+How many columns: 8
+********
+********
+********
+********
+********
+********
+How many rows: 5
+How many columns: 12
+************
+************
+************
+************
+************
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int row, column;  
+   bool LOOPER = false;
+   do {
+   
+	cout << "Enter number of rows: ";	
+	cin >> row;
+   	cout << "Enter number of columns: ";	
+	cin >> column;
+	
+    for (int a = 0; a < row; ++a) {
+    	
+   	cout << "\n*";
+ 	for (int b = 1; b < column; ++b) 
+    {
+    	cout << "*";
+	}
+	}
+		cout << "\n\n";	
+		}while (!LOOPER);
+		
+		 
+    return 0;
+}
