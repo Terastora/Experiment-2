@@ -21,15 +21,13 @@ int main ()
 		
 	}
 	
-	if (a = 10) while (a <=26){
+	if (a = 10) while (a <=28){
 		a = a + 2 ;
 		cout << a<<"," ;
-		
-		
 	}
-	if (a=30){
-	
-	cout << a;}
+	cout << "\b ";
+		
+
 
 	return 0;
 }
