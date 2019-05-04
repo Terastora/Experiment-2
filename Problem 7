@@ -1,0 +1,31 @@
+//Problem 7
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x, sum = 0;
+do {
+
+    cout << "Enter a number: ";
+    cin >> x;
+
+	if ( x > 0){
+	
+    for (int i = 1; i <= x; ++i) {
+        sum += i;
+    }
+         cout << "The sum of all whole numbers from 1 to " << x << " is " << sum<< endl;;
+   
+    }
+
+
+else {
+	cout << "Thank You!";
+
+}
+
+}while (x!=0);
+
+    return 0;
+}
