@@ -1,0 +1,26 @@
+/*PROBLEM 2: Write a program that computes a customer’s water bill. The bill includes a P35 water demand
+charge plus a consumption(use) charge of P1.10 for every gallon used. Consumption is figured from meter
+readings in gallons taken recently and during the previous month. If the customer’s unpaid balance is
+greater than 0, a P20 late charge is assessed as well.
+*/
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int x,unpaid,gallon;
+	float concharge = 1.10, demandcharge =35;
+	
+	cout << "How many gallons have been consumed this month?\n";
+	cin >> gallon;
+	cout << "Enter Unpaid amount from last month\n";
+	cin >> unpaid;
+	
+	if (unpaid <= 0){
+		cout << (demandcharge + (gallon + concharge ))  ;
+	}
+	else if (unpaid > 0)
+		cout << demandcharge + (20 + (gallon + concharge )) ;
+	
+	return 0;
+}
